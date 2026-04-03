@@ -4,11 +4,18 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
+import Root from './components/Root/Root.jsx';
+import Home from './components/Home/Home.jsx';
+import Mobile from './components/Mobile/Mobile.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>welcome to react router</div>
+    Component: Root,
+    children: [
+      {index: true, Component: Home },
+      {path: '/mobile' , Component: Mobile}
+    ]
   },
   {
     path: 'about',
@@ -17,6 +24,15 @@ const router = createBrowserRouter([
   {
     path: 'blogs',
     element: <h1>all my blogs are here</h1>
+  },
+  {
+    path: 'app',
+    Component: App
+  },
+  {
+    path: 'app2',
+    element: <App />
+
   }
 ])
 
