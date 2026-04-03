@@ -3,7 +3,7 @@ import React from 'react'
 function Laptops() {
     return (
         <div>
-            <h2>Laptops component</h2>
+            <h1>Laptops component</h1>
         </div>
     )
 }
