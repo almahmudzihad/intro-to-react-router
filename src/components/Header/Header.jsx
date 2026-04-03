@@ -10,6 +10,7 @@ function Header() {
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/laptops">Laptops</NavLink>
                 <NavLink to="/mobile">Mobile</NavLink>
+                <NavLink to="/users">Users</NavLink>
             </nav>
         </div>
     )
