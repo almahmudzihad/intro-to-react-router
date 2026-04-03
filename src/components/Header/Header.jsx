@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import './header.css'
 
 function Header() {
@@ -7,9 +7,9 @@ function Header() {
         <div>
             <h1>Header Component</h1>
             <nav>
-                <Link to="/">Home</Link>
-                <Link to="/laptops">Laptops</Link>
-                <Link to="/mobile">Mobile</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/laptops">Laptops</NavLink>
+                <NavLink to="/mobile">Mobile</NavLink>
             </nav>
         </div>
     )

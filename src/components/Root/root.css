@@ -2,3 +2,6 @@
     display: flex;
     gap: 20px;
 }
+nav a.active{
+    color: aqua;
+}
