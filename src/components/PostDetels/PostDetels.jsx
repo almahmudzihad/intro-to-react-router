@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router'
 function PostDetels() {
     const post = useLoaderData();
     return (
-        <div>
+        <div style={{border: '2px solid red', margin: '10px'}}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
         </div>
